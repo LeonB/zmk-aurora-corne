@@ -15,6 +15,7 @@
 / {
     behaviors {
         #include "version.dtsi"
+
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -50,6 +51,7 @@
         zmk_layer {
             bindings = <&mo 3>;
             key-positions = <37 40>;
+            layers = <0>;
         };
     };
 
