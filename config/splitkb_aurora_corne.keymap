@@ -110,6 +110,7 @@
         };
 
         zmk_layer {
+            display-name = "zmk";
             bindings = <
 &trans       &trans        &trans        &trans        &trans        &trans          &trans     &trans             &trans      &trans      &trans  &trans
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &soft_off  &ext_power EP_TOG  &sys_reset  &macro_ver  &trans  &trans
