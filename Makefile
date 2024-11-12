@@ -3,6 +3,7 @@ DOCKER := $(shell { command -v podman || command -v docker; })
 .PHONY: all clean distclean
 
 all:
+	$($(shell bin/get_version.sh >> /dev/null)
 	$(DOCKER) build --tag zmk-build-user-config --build-arg USER_ID=$(shell id -u) .
 	$(DOCKER) run --rm -it --name zmk-build-user-config \
 		-v $(PWD)/build:/app/build \
